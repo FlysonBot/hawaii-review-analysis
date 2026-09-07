@@ -1,0 +1,86 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ---- wider layout now that the sidebar is gone ---- */
+#content-wrapper .inner,
+header .inner,
+footer .inner {
+  width: 90%;
+  max-width: 1180px;
+}
+
+#main-content {
+  width: 100%;
+  float: none;
+}
+
+header .inner h1,
+header .inner h2 {
+  width: auto;
+  max-width: 900px;
+}
+
+/* ---- larger, more readable body text ---- */
+#main-content {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#main-content p,
+#main-content li {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+#main-content h1 { font-size: 3.1em; }
+#main-content h2 { font-size: 1.9em; margin-top: 1.4em; }
+#main-content h3 { font-size: 1.45em; margin-top: 1.2em; }
+
+#main-content code,
+#main-content pre {
+  font-size: 15px;
+}
+
+/* ---- tables: readable, full width, scroll instead of squish ---- */
+#main-content table {
+  display: table;
+  width: 100%;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+#main-content table th,
+#main-content table td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #d8d8d8;
+  white-space: normal;
+  word-break: normal;
+}
+
+#main-content table th {
+  background: #f0f0f0;
+  font-weight: bold;
+  text-align: left;
+}
+
+#main-content table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* the cleaned-DataFrame head is wide; let it scroll rather than overflow */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---- plot embeds ---- */
+#main-content iframe {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  margin: 1.2em 0;
+}

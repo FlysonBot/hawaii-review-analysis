@@ -1,0 +1,17 @@
+<script>
+  window.MathJax = {
+    tex: {
+      // Only \( ... \) delimits inline math. Single "$" is NOT a math
+      // delimiter, so the "$"/"$$" price tiers in the text stay literal.
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']],
+      processEscapes: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      ignoreHtmlClass: 'highlight|language-plaintext'
+    }
+  };
+</script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
